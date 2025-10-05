@@ -15,4 +15,8 @@
 
 # 💻 Esta aplicacion Fue creda con las siguientes librerias y app
 
-`People` nos permitio convertir `PDF` a imagenes puedes consultarlo <a href="https://github.com/suitenumerique/people" target="_blank">People Github</a>
+# `People` 
+nos permitio convertir `PDF` a imagenes puedes consultarlo <a href="https://github.com/suitenumerique/people" target="_blank">People GitHub</a>
+
+# `ImageMagick` 
+nos permitio convertir diferentes `Imagenes` a diferentes `Formatos` <a href="https://github.com/ImageMagick/ImageMagick" target="_blank">ImageMagick GitHub</a>
