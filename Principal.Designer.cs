@@ -52,7 +52,7 @@
             this.PanelHerramienta.Location = new System.Drawing.Point(2, 2);
             this.PanelHerramienta.Margin = new System.Windows.Forms.Padding(4);
             this.PanelHerramienta.Name = "PanelHerramienta";
-            this.PanelHerramienta.Size = new System.Drawing.Size(546, 39);
+            this.PanelHerramienta.Size = new System.Drawing.Size(555, 39);
             this.PanelHerramienta.TabIndex = 6;
             // 
             // btnMinimizar
@@ -66,7 +66,7 @@
             this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Image = global::MagisIMG.Properties.Resources.minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(446, -4);
+            this.btnMinimizar.Location = new System.Drawing.Point(455, -4);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(47, 39);
@@ -85,7 +85,7 @@
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(1)))), ((int)(((byte)(5)))));
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = global::MagisIMG.Properties.Resources.Cerrar;
-            this.btnCerrar.Location = new System.Drawing.Point(500, -4);
+            this.btnCerrar.Location = new System.Drawing.Point(509, -4);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(47, 39);
@@ -109,7 +109,7 @@
             // 
             this.PicBoxFormatImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicBoxFormatImg.Image = global::MagisIMG.Properties.Resources.iconIMG;
-            this.PicBoxFormatImg.Location = new System.Drawing.Point(343, 150);
+            this.PicBoxFormatImg.Location = new System.Drawing.Point(356, 150);
             this.PicBoxFormatImg.Name = "PicBoxFormatImg";
             this.PicBoxFormatImg.Size = new System.Drawing.Size(103, 62);
             this.PicBoxFormatImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,7 +133,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 225);
+            this.label1.Location = new System.Drawing.Point(47, 225);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 25);
             this.label1.TabIndex = 16;
@@ -143,7 +143,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(278, 225);
+            this.label2.Location = new System.Drawing.Point(291, 225);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(237, 25);
             this.label2.TabIndex = 17;
@@ -153,7 +153,7 @@
             // 
             this.PicBoxPdf.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicBoxPdf.Image = global::MagisIMG.Properties.Resources.pdfarchive;
-            this.PicBoxPdf.Location = new System.Drawing.Point(78, 150);
+            this.PicBoxPdf.Location = new System.Drawing.Point(89, 150);
             this.PicBoxPdf.Name = "PicBoxPdf";
             this.PicBoxPdf.Size = new System.Drawing.Size(110, 62);
             this.PicBoxPdf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -166,7 +166,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.ClientSize = new System.Drawing.Size(550, 336);
+            this.ClientSize = new System.Drawing.Size(559, 340);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PicBoxFormatImg);
@@ -178,6 +178,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(559, 340);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MagisIMG";
