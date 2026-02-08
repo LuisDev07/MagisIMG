@@ -169,6 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MagisIMG.ico" />
+    <Content Include="UI IMG\v1.0.0\1.png" />
+    <Content Include="UI IMG\v1.0.0\2.png" />
+    <Content Include="UI IMG\v1.0.0\3.png" />
+    <Content Include="UI IMG\v1.0.1\1.png" />
+    <Content Include="UI IMG\v1.0.1\2.png" />
+    <Content Include="UI IMG\v1.0.1\3.png" />
     <None Include="Resources\delete.png" />
     <None Include="Resources\file_save.png" />
     <None Include="Resources\Selection.png" />
