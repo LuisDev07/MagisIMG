@@ -73,9 +73,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cerrar {
+        internal static System.Drawing.Bitmap arrow_back {
             get {
-                object obj = ResourceManager.GetObject("Cerrar", resourceCulture);
+                object obj = ResourceManager.GetObject("arrow_back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iconIMG {
+        internal static System.Drawing.Bitmap Close {
             get {
-                object obj = ResourceManager.GetObject("iconIMG", resourceCulture);
+                object obj = ResourceManager.GetObject("Close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MagicImg {
+        internal static System.Drawing.Bitmap delete {
             get {
-                object obj = ResourceManager.GetObject("MagicImg", resourceCulture);
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maximizar {
+        internal static System.Drawing.Bitmap file_save {
             get {
-                object obj = ResourceManager.GetObject("maximizar", resourceCulture);
+                object obj = ResourceManager.GetObject("file_save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap minimizar {
+        internal static System.Drawing.Bitmap IMGMagis {
             get {
-                object obj = ResourceManager.GetObject("minimizar", resourceCulture);
+                object obj = ResourceManager.GetObject("IMGMagis", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pdfarchive {
+        internal static System.Drawing.Bitmap MagisIMGWallpaper {
             get {
-                object obj = ResourceManager.GetObject("pdfarchive", resourceCulture);
+                object obj = ResourceManager.GetObject("MagisIMGWallpaper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Restaurar {
+        internal static System.Drawing.Bitmap Minimized {
             get {
-                object obj = ResourceManager.GetObject("Restaurar", resourceCulture);
+                object obj = ResourceManager.GetObject("Minimized", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,29 @@ namespace MagisIMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap VolverIMG {
+        internal static System.Drawing.Bitmap PDFMagis {
             get {
-                object obj = ResourceManager.GetObject("VolverIMG", resourceCulture);
+                object obj = ResourceManager.GetObject("PDFMagis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Selection {
+            get {
+                object obj = ResourceManager.GetObject("Selection", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wizard_magic {
+            get {
+                object obj = ResourceManager.GetObject("wizard-magic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

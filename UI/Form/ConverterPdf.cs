@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MagisIMG.Core.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,7 @@ namespace MagisIMG
         string popplerPath = Path.Combine(Application.StartupPath, "Poppler", "Library", "bin", "pdftoppm.exe");
         string pdfPath = "";
 
-
+        ButtonHoverMoveAnimator animatorbtn = new ButtonHoverMoveAnimator(); // <---- variables para la animacion de los botones
         public ConverterPdf()
         {
             InitializeComponent();
@@ -33,8 +34,7 @@ namespace MagisIMG
             // Solo pasamos el Label, los colores ya están dentro de la clase
             HtmlColorAnimator animatorletra = new HtmlColorAnimator(lbltitle);
 
-            //agregamos el efecto de hover al  picturesbox
-            var hoverEffect = new PictureBoxHoverEffect(PicBoxVolver);
+            
         }
 
         private void PdfConverter_Load(object sender, EventArgs e)
@@ -45,9 +45,18 @@ namespace MagisIMG
             animator.ShowWithFade(); // llamamos al metodo de animacion de la clase FormAnimator
 
 
-            //llamamos la clase para redondear los botones
+            
+
+            animatorbtn.Register(btnPrincipal, MoveDirection.Left);
+            BotonHelper.Redondear(btnPrincipal, 5);
+            //btnseleccionar
+            animatorbtn.Register(btnseleccionar, MoveDirection.Right);
             BotonHelper.Redondear(btnseleccionar, 5);
+            //btnguardar
+            animatorbtn.Register(btnguardar, MoveDirection.Left);
             BotonHelper.Redondear(btnguardar, 5);
+            //btnLimpiar
+            animatorbtn.Register(btnLimpiar, MoveDirection.Right);
             BotonHelper.Redondear(btnLimpiar, 5);
         }
 
@@ -218,7 +227,7 @@ namespace MagisIMG
                 Width = 200,
                 Height = 280,
                 Margin = new Padding(10),
-                BackColor = Color.FromArgb(30, 30, 30),
+                BackColor = Color.Transparent,
                 BorderStyle = BorderStyle.FixedSingle,
                 Tag = tempImage
             };
@@ -327,7 +336,7 @@ namespace MagisIMG
                 Width = 200,
                 Height = 280,
                 Margin = new Padding(10),
-                BackColor = Color.FromArgb(30, 30, 30),
+                BackColor = Color.Transparent,
                 BorderStyle = BorderStyle.FixedSingle,
                 Tag = "DefaultPDF" // <--- Aquí
             };
@@ -344,12 +353,12 @@ namespace MagisIMG
 
             Label lblNombre = new Label
             {
-                Text = "Seleccione un archivo",
+                Text = " Selleccione una imagen ",
                 AutoSize = false,
-                Width = 180,
+                Width = 190,
                 Height = 20,
-                Top = 155,
-                Left = 10,
+                Top = 180,
+                Left = 30,
                 Font = new Font("Segoe UI", 8, FontStyle.Bold),
                 ForeColor = Color.White
             };
@@ -360,12 +369,15 @@ namespace MagisIMG
             flowPanel.Controls.Add(panelPDF);
         }
 
-        private void PicBoxVolver_Click(object sender, EventArgs e)
+       
+
+        private void btnPrincipal_Click(object sender, EventArgs e)
         {
             Principal Princi = new Principal();
             Princi.Show();
 
             this.Close();
+
         }
     }
 

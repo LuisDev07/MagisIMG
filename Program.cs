@@ -17,8 +17,8 @@ namespace MagisIMG
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new ConverterIMG());
-           // Application.Run(new ConverterPdf());
-           Application.Run(new Principal());
+            // Application.Run(new ConverterPdf());
+            Application.Run(new Principal());
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MagisIMG.Core.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,9 @@ namespace MagisIMG
     public partial class Principal : BorderlessFormBase
     {
         private FormAnimator animator; // <---- variables para la animacion de la ventana
+
+
+        ButtonHoverMoveAnimator animatorbtn = new ButtonHoverMoveAnimator(); // <---- variables para la animacion de los botones
         public Principal()
         {
            InitializeComponent();
@@ -26,9 +30,7 @@ namespace MagisIMG
             HtmlColorAnimator animatorletra = new HtmlColorAnimator(lbltitle);
 
 
-            //agregamos el efecto de hover al  picturesbox
-            var hoverEffect = new PictureBoxHoverEffect(PicBoxFormatImg);
-            var hoverEffect1 = new PictureBoxHoverEffect(PicBoxPdf);
+           
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -44,20 +46,29 @@ namespace MagisIMG
         private void Principal_Load(object sender, EventArgs e)
         {
             animator.ShowWithFade(); // llamamos al metodo de animacion de la clase FormAnimator
+
+            BotonHelper.Redondear(btnIMG, 5); //Redondeamos los botones utilizando la clase BotonHelper
+            BotonHelper.Redondear(btnPDF, 5); //Redondeamos los botones utilizando la clase BotonHelper
+
+            animatorbtn.Register(btnIMG, MoveDirection.Right);
+            animatorbtn.Register(btnPDF, MoveDirection.Right);
         }
 
-        private void PicBoxPdf_Click(object sender, EventArgs e)
-        {
-           ConverterPdf pdf= new ConverterPdf();
-           pdf.Show();
+      
+       
 
-           this.Hide();
-        }
-
-        private void PicBoxFormatImg_Click(object sender, EventArgs e)
+        private void btnIMG_Click(object sender, EventArgs e)
         {
             ConverterIMG IMG = new ConverterIMG();
             IMG.Show();
+
+            this.Hide();
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            ConverterPdf pdf = new ConverterPdf();
+            pdf.Show();
 
             this.Hide();
         }

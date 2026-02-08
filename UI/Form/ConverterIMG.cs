@@ -1,4 +1,5 @@
 ﻿using ImageMagick;
+using MagisIMG.Core.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,8 @@ namespace MagisIMG
         private string selectedImagePath; // Almacena la ruta de la imagen seleccionada
 
         private FormAnimator animator; // <---- variables para la animacion de la ventana
+
+        ButtonHoverMoveAnimator animatorbtn = new ButtonHoverMoveAnimator(); // <---- variables para la animacion de los botones
         public ConverterIMG()
         {
             InitializeComponent();
@@ -30,8 +33,7 @@ namespace MagisIMG
             HtmlColorAnimator animatorletra = new HtmlColorAnimator(lbltitle);
 
 
-            //agregamos el efecto de hover al  picturesbox
-            var hoverEffect = new PictureBoxHoverEffect(PicBoxVolver);
+           
         }
 
      
@@ -48,16 +50,25 @@ namespace MagisIMG
 
 
 
-            //llamamos la clase para redondear los botones
-            BotonHelper.Redondear(btnSeleccionar, 5); 
-            BotonHelper.Redondear(btnGuardar,5); 
-            BotonHelper.Redondear(btnLimpiar, 5);
-
-
 
 
             //agregamos un layout por defecto
             AgregarImagenPorDefecto();
+
+            //btn Regresar
+            animatorbtn.Register(btnPrincipal, MoveDirection.Left);
+            BotonHelper.Redondear(btnPrincipal, 5);
+
+            //btnseleccionar
+            animatorbtn.Register(btnSeleccionar, MoveDirection.Right);
+            BotonHelper.Redondear(btnSeleccionar, 5);
+            //btnguardar
+            animatorbtn.Register(btnGuardar, MoveDirection.Left);
+            BotonHelper.Redondear(btnGuardar, 5);
+            //btnLimpiar
+            animatorbtn.Register(btnLimpiar, MoveDirection.Right);
+            BotonHelper.Redondear(btnLimpiar, 5);
+            
         }
 
      
@@ -255,7 +266,7 @@ namespace MagisIMG
                 Width = 200,
                 Height = 250,
                 Margin = new Padding(10),
-                BackColor = Color.FromArgb(30, 30, 30),
+                BackColor = Color.Transparent,
                 BorderStyle = BorderStyle.FixedSingle
             };
 
@@ -353,7 +364,7 @@ namespace MagisIMG
                 Width = 200,
                 Height = 250,
                 Margin = new Padding(10),
-                BackColor = Color.FromArgb(30, 30, 30),
+                BackColor = Color.Transparent,
                 BorderStyle = BorderStyle.FixedSingle
             };
 
@@ -371,14 +382,14 @@ namespace MagisIMG
             // Labels informativos vacíos o genéricos
             Label lblNombre = new Label
             {
-                Text = "Selleccione una imagen ",
+                Text = " Selleccione una imagen ",
                 AutoSize = false,
-                Width = 180,
+                Width = 190,
                 Height = 20,
-                Top = 155,
-                Left = 10,
+                Top = 180,
+                Left = 30,
                 Font = new Font("Segoe UI", 8, FontStyle.Bold),
-                ForeColor = Color.SkyBlue
+                ForeColor = Color.White
             };
 
             // Agregar controles al panel
@@ -389,12 +400,19 @@ namespace MagisIMG
             flowPanel.Controls.Add(panelImagen);
         }
 
-        private void PicBoxVolver_Click(object sender, EventArgs e)
+      
+
+        private void btnPrincipal_Click(object sender, EventArgs e)
         {
-           Principal Princi = new Principal(); 
+            Principal Princi = new Principal();
             Princi.Show();
 
             this.Close();
+        }
+
+        private void cbFormat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
