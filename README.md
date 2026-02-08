@@ -4,12 +4,13 @@
 # 📷 vista previa
 
 
-<img width="500" height="auto" alt="vista01" src="https://github.com/user-attachments/assets/9c04e209-d09e-479e-8925-d78fc44c24b8" />
-
-<img width="500" height="auto" alt="vista02" src="https://github.com/user-attachments/assets/ba99599f-5edf-4723-9732-6ae31c7dfe36" />
+![Vista previa](UI%20IMG/v1.0.1/1.png)
 
 
-<img width="500" height="auto" alt="vista03" src="https://github.com/user-attachments/assets/71f5e812-9ca3-4aaa-8dfe-140b78dcd5cd" />
+![Vista previa](UI%20IMG/v1.0.1/2.png)
+
+
+![Vista previa](UI%20IMG/v1.0.1/3.png)
 
 
 
